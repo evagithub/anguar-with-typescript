@@ -10,6 +10,15 @@
     },
     "jquery/jquery.d.ts": {
       "commit": "8d44da84eb10cdcd2f7ea133f289caef817cb2b9"
+    },
+    "angularjs/angular-resource.d.ts": {
+      "commit": "8d44da84eb10cdcd2f7ea133f289caef817cb2b9"
+    },
+    "angularjs/angular-route.d.ts": {
+      "commit": "8d44da84eb10cdcd2f7ea133f289caef817cb2b9"
+    },
+    "angularjs/angular-mocks.d.ts": {
+      "commit": "8d44da84eb10cdcd2f7ea133f289caef817cb2b9"
     }
   }
 }
