@@ -1,6 +1,6 @@
 module app.domain{
     export interface ITip{
-        //tipId: number;
+        tipId: number;
         name: string;
         shortDescription: string;
         description: string;
@@ -10,7 +10,7 @@ module app.domain{
     }
     
     export class Tip implements ITip{
-        constructor(//public tipId: number,
+        constructor(public tipId: number,
                     public name: string,
                     public shortDescription: string,
                     public description: string,

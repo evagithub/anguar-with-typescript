@@ -1,3 +1,5 @@
 module app {
-   angular.module("tipApp", []);
+   angular.module("tipApp",
+         ["common.services",
+             "tipResourceMock"]);
 }

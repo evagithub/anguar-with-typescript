@@ -1,4 +1,5 @@
 var app;
 (function (app) {
-    angular.module("tipApp", []);
+    angular.module("tipApp", ["common.services",
+        "tipResourceMock"]);
 })(app || (app = {}));

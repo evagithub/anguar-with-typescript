@@ -3,9 +3,9 @@ var app;
     var domain;
     (function (domain) {
         var Tip = (function () {
-            function Tip(//public tipId: number,
-                name, shortDescription, description, image, rating //,
+            function Tip(tipId, name, shortDescription, description, image, rating //,
                 ) {
+                this.tipId = tipId;
                 this.name = name;
                 this.shortDescription = shortDescription;
                 this.description = description;
