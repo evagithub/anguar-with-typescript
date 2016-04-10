@@ -91,6 +91,8 @@ var app;
                         "rating": 1
                     }
                 ];
+                var newTip = new app.domain.Tip("test", "short", "descr", "image", 2);
+                this.tips.push(newTip);
             }
             TipListCtrl.prototype.toggleDetails = function () {
                 this.showDetails = !this.showDetails;

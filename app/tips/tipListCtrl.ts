@@ -2,14 +2,14 @@ module app.tipApp {
 interface ITipListModel{
     title: string;
     showDetails: boolean;
-    tips: any[];
+    tips: app.domain.ITip[];
     toggleDetails():void;
 }
 
 class TipListCtrl implements ITipListModel {
     title: string;
     showDetails: boolean;
-    tips: any[];
+    tips: app.domain.ITip[];
     
     constructor() {
         this.title ="Some Tips";
@@ -110,6 +110,8 @@ class TipListCtrl implements ITipListModel {
                     "rating": 1
                 }
                 ];
+                var newTip =new app.domain.Tip("test","short","descr", "image",2 );
+                this.tips.push(newTip);
     }
     toggleDetails(): void{
         this.showDetails = !this.showDetails;
