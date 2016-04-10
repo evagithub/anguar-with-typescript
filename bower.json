@@ -1,0 +1,26 @@
+{
+  "name": "anguar-with-typescript",
+  "homepage": "https://github.com/evagithub/anguar-with-typescript",
+  "authors": [
+    "evagithub <>"
+  ],
+  "description": "sample test for angular with typescript",
+  "main": "index.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "angular-mocks": "^1.5.3",
+    "angular-route": "^1.5.3"
+  }
+}

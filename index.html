@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tips App</title>
+
+    <!-- Style sheets -->
+    <link href="./app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body ng-app="tipApp">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Tips Management</div>                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-include="'./app/tips/tipListView.html'"></div>
+    </div>
+
+    <!-- Library Scripts -->
+    <script src="./app/bower_components/angular/angular.js"></script>
+    <script src="./app/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="./app/bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="./app/bower_components/angular-route/angular-route.js"></script>
+    
+    <!-- Application Script -->
+    <script src="./app/app.js"></script>
+    
+    <!-- Domain Classes -->
+
+    <!-- Services -->
+
+    <!-- Controllers -->
+    <script src="./app/tips/tipListCtrl.js"></script>
+</body>
+
+</html>

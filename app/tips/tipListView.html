@@ -1,0 +1,35 @@
+<div class="panel panel"
+     ng-controller="TipListCtrl as vm">
+    <div class="panel-heading"
+         style="font-size:large">{{::vm.title}}
+    </div>
+
+    <div class="panel-body">
+        <table class="table">
+
+            <thead>
+            <tr>
+                <td>Name</td>
+                <td>Description</td>
+                <td>
+                    <button type="button"
+                            class="btn btn-primary"
+                            ng-click="vm.toggleDetails()">
+                        {{vm.showDetails ? "Hide" : "Show"}} Details
+                    </button>
+                </td>                
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="tip in vm.tips">
+                 <td>{{ tip.name}} </td>
+                <td>{{ tip.shortDescription }}</td>
+                <td>
+                    <span ng-if="vm.showDetails" >{{tip.Description}}</span>
+                </td>
+               
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
